@@ -1,101 +1,131 @@
-import Image from "next/image";
+import Header from "./components/header";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function Home(){
+  return(
+    <div>
+      <Header/>
+      <div className="hometitleContainer focus-in-contract">
+        <h1>Welcome to my Blogging Page</h1>
+      </div>
+        <div className="firstBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/typescript.jpg"} alt="Image" />
+          </div> 
+          <div>
+            <p className="typescript">
+              TypeScript is a superset of JavaScript that adds static type checking to the language. TypeScript supports features such as type annotations, interfaces, and classes.
+            </p>
+          </div> 
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="seceondBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/javascript.jpg"} alt="Image" />
+          </div>
+          <div>
+            <p className="javascript">
+              JavaScript is a interpreted programming language that conforms to the ECMAScript specification, and it has been widely adopted for web development,
+           </p>
+          </div>
+        </div>
+      </div>
+      <div className="thirdBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/nextjs.jpg"} alt="Image" />
+            </div>
+            <div>
+              <p className="nextjs">
+                 Next.js is a React framework that enables server-side rendering and static site generation. It's a great choice for building blogs, & e-commerce website.
+              </p>
+            </div>
+        </div>
+      </div>
+      <div className="firstBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/html.jpg"} alt="Image" />
+            </div>
+            <div>
+              <p className="html">
+                HTML is the standard markup language for creating web pages. It consists of a series of elements, tags, and attributes.
+              </p>
+        </div>
+      </div>
+      </div>
+      <div className="seceondBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/css.jpg"} alt="Image" />
+            </div>
+            <div>
+              <p className="css">
+                CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML or XML.
+              </p>
+            </div>  
+        </div>
+      </div>
+      <div className="thirdBox shadow-pop-bl">
+        <h1 className="firstblogContainer">Blog</h1>
+        <div className="blogboxContainer">
+          <div className="picture">
+            <img src={"/tailwind.jpg"} alt="Image" />
+            </div>
+            <div>
+              <p className="tailwind">
+                Tailwind CSS is a utility-first CSS framework that provides a modern, responsive, and accessible design system.
+              </p>
+            </div>
+        </div>
+      </div>
+      <hr/>
+        <div className="group-3">
+        <div className="contactFooter">
+            <h3 className="title">Contact</h3>
+            <div className="contact_info">
+                <p className="descriptionFooter">
+                    Bahria Town Karachi 
+                </p>
+                <p className="descriptionFooterbold">
+                    +92 321 8318143
+                </p>
+                <p className="descriptionFooterbold">
+                    umaimafareed07@gmail.com
+                </p>
+            </div>
+        </div>    
+        <div className="socials">
+            <h3 className="title">Socials</h3>
+            <div className="social_items">
+                <a href="#" className="social_items">
+                <FaSquareInstagram /> 
+                    <span>  umaima-x-fareed</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" className="social_item">
+                    <FaGithub />
+                     <span>umaimafareed07</span>
+                </a>
+            </div>
+            <div>
+                <a href="#" className="social_item">
+                    <FaDiscord />
+                     <span>umaimafareed_08955</span>
+                </a>
+            </div>
+        </div>
+        </div>
     </div>
-  );
+  )
 }
