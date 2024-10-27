@@ -5,11 +5,13 @@ import { FaDiscord } from "react-icons/fa";
 
 export default function Home(){
   return(
-    <div>
+    <div className="homeMaincontainer">
       <Header/>
+      <div className="childContainer">
       <div className="hometitleContainer focus-in-contract">
-        <h1>Welcome to my Blogging Page</h1>
+        <h1 className="welcomePage">Welcome to my Blogging Page</h1>
       </div>
+      {/* <div className="boxParent"> */}
         <div className="firstBox shadow-pop-bl">
         <h1 className="firstblogContainer">Blog</h1>
         <div className="blogboxContainer">
@@ -88,6 +90,7 @@ export default function Home(){
             </div>
         </div>
       </div>
+      {/* </div> */}
       <hr/>
         <div className="group-3">
         <div className="contactFooter">
@@ -126,6 +129,8 @@ export default function Home(){
             </div>
         </div>
         </div>
+        </div>
     </div>
+    
   )
 }
