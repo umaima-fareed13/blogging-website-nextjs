@@ -11,7 +11,6 @@ export default function Home(){
       <div className="hometitleContainer focus-in-contract">
         <h1 className="welcomePage">Welcome to my Blogging Page</h1>
       </div>
-      {/* <div className="boxParent"> */}
         <div className="firstBox shadow-pop-bl">
         <h1 className="firstblogContainer">Blog</h1>
         <div className="blogboxContainer">
@@ -94,7 +93,7 @@ export default function Home(){
       <hr/>
         <div className="group-3">
         <div className="contactFooter">
-            <h3 className="title">Contact</h3>
+            <h4 className="title">Contact</h4>
             <div className="contact_info">
                 <p className="descriptionFooter">
                     Bahria Town Karachi 
@@ -108,7 +107,7 @@ export default function Home(){
             </div>
         </div>    
         <div className="socials">
-            <h3 className="title">Socials</h3>
+            <h4 className="title">Socials</h4>
             <div className="social_items">
                 <a href="#" className="social_items">
                 <FaSquareInstagram /> 
